@@ -2,7 +2,9 @@ var mongoose = require('mongoose');
 
 module.exports = (uri, db) => {
     // criando conexão
-    mongoose.connect(`${uri}/${db}`);
+    mongoose.connect(`${uri}/${db}`, {
+      useMongoClient: true,
+    });
 
     // acessando os eventos da minha conexão criada
     mongoose

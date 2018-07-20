@@ -1,6 +1,6 @@
 module.exports = function(app) {
-	
-	var api = app.api.foto;
+
+	var api = new app.api.foto(app);
 
 	// mudando a declaração da rota e adicionando suporte ao verbo POST
 	app.route('/v1/fotos')
