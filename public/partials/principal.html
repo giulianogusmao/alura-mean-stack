@@ -1,5 +1,6 @@
 <div class="jumbotron">
-	<h1 class="text-center">Alurapic</h1>
+  <h1 class="text-center">Alurapic</h1>
+  <small class="pull-right"><a href="/#/logout">Sair</a></small>
 </div>
 
 <p ng-show="mensagem.length" class="alert alert-info">
@@ -15,7 +16,7 @@
 						Nova foto
 					</a>
 				</span>
-				<input class="form-control" placeholder="filtrar pelo título da foto" 
+				<input class="form-control" placeholder="filtrar pelo título da foto"
 					ng-model="filtro" ng-model-options="{ debounce: 500 }">
 		</form>
 	</div> <!-- fim col-md-12 -->

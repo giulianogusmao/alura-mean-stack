@@ -23,6 +23,16 @@ angular.module('alurapic', ['minhasDiretivas','ngAnimate', 'ngRoute', 'ngResourc
       controller: 'LoginsController'
     });
 
+    $routeProvider.when('/logout', {
+      template: " ",
+      controller: 'LogoutController'
+    });
+
+    $routeProvider.when('/registrar', {
+      templateUrl: 'partials/register.html',
+      controller: 'RegisterController'
+    });
+
 		$routeProvider.otherwise({redirectTo: '/fotos'});
 
 	});
